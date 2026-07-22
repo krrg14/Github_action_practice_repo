@@ -1,0 +1,12 @@
+name: First workflow
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: print the message
+      uses: echo "👋 hello! from github action, this is the first workflow"
